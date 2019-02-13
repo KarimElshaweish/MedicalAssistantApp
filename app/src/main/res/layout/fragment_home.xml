@@ -1,0 +1,36 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context=".MainActivity" >
+
+    <GridView
+        android:id="@+id/gridView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchMode="columnWidth"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView1"
+        android:numColumns="2" >
+
+    </GridView>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/textView1"
+    >
+    <TextView
+        android:drawableRight="@drawable/sensor1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black_app"
+        android:gravity="center"
+        android:text=" Active Sensors" />
+</LinearLayout>
+
+</RelativeLayout>

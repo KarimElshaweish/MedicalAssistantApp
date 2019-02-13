@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/gsr_switch"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/body_pos_witch"
+        android:layout_alignTop="@+id/textView8"
+
+        tools:checked="true" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/ecg_switch"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/hr_switch"
+        android:layout_alignTop="@+id/label_ecg"
+        tools:checked="true" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/alcohol_switch"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/gsr_switch"
+        android:layout_alignTop="@+id/textView6"
+        tools:checked="true" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/temprature_switch"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/body_pos_witch"
+        android:layout_alignTop="@+id/label_temprature"
+        tools:checked="true" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/spo2_switch"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/body_pos_witch"
+        android:layout_alignTop="@+id/textView5"
+        tools:checked="true" />
+
+    <TextView
+        android:id="@+id/label_ecg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/label_heart_rate"
+        android:layout_marginTop="150dp"
+        android:text="ECG Sensor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/label_ecg"
+        android:layout_marginTop="200dp"
+        android:text="SPO2 Sensor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/label_ecg"
+        android:layout_marginTop="250dp"
+        android:text="Alcohol Sensor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/label_ecg"
+        android:layout_marginTop="300dp"
+        android:text="Body Pos. Sensor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/label_ecg"
+        android:layout_marginTop="350dp"
+        android:text="GSR Sensor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_temprature"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/label_heart_rate"
+        android:layout_marginTop="100dp"
+        android:text="Temprature Sensor"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/label_heart_rate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="36dp"
+        android:layout_marginTop="50dp"
+        android:text="Heart Rate Sensor"
+        android:textSize="18sp" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/body_pos_witch"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/ecg_switch"
+        android:layout_alignTop="@+id/textView7"
+        tools:checked="true" />
+
+    <android.support.v7.widget.SwitchCompat
+        android:id="@+id/hr_switch"
+        android:layout_width="70dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignTop="@+id/label_heart_rate"
+        android:layout_marginEnd="59dp"
+        android:showText="true"
+        tools:checked="true" />
+</RelativeLayout>

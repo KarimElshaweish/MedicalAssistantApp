@@ -1,0 +1,34 @@
+<resources>
+    <string name="app_name">Smart Clinic</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Smart Clinic</string>
+    <string name="nav_header_subtitle">smartclinic@gmail.com</string>
+    <string name="nav_header_desc">Your portable medical assistant</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_splash">Smart Clinic</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="temprature_fragment_content"><![CDATA[Refrence Range :\n\t\t\tNegative: <=36\n\t\t\tEquivocal :36.1-37.2\n\t\t\tPositive: >= 37.3\n\nSuggestions:\n\t\t\tDrink fluids\n\t\t\tRelax\n\t\t\tStay Cool\n\nSuggested Medicine:\n\t\t\tiBurofen\n\t\t\tAcetaminophen]]></string>
+    <string name="gsr_fragment_content"><![CDATA[Refrence Range :\n\t\t\tEquivocal :<=279\n\t\t\tSpasm of Nerver: >= 280\n\nSuggestions:\n\t\t\tRelax\n\t\t\tConsult A Doctor\n\t\t\t]]></string>
+    <string name="heartrate_fragment_content"><![CDATA[Refrence Range :\n\t\t\tNegative: <=60\n\t\t\tEquivocal :61-100\n\t\t\tPositive: >= 101\n\nSuggestions:\n\t\t\tQuit Smoking\n\t\t\tControl health conditions as high blood pressure and diabetes\n\t\t\tExercise at least 30 minutes a day\n\t\t\tHealthy weight reduction\n\t\t\tReduce Stress]]></string>
+    <string name="spo2_fragment_content"><![CDATA[Refrence Range :\n\t\t\tNegative: <=89mmHg\n\t\t\tEquivocal :90-100 mmHg\n\t\t\tPositive: >= 101mmHg\n\nSuggestions:\n\t\t\tQuitting Smoking\n\t\t\tExcercising Regularly\n\t\t\tEating healthy food, fruits and vegetables\n\nSuggested Medicine:\n\t\t\tIf Spo2 less than (90) , you need supplement oxygen]]></string>
+    <string name="alcohol_fragment_content"><![CDATA[Refrence Range :\n\t\t\tSober :<=200 mg/l \n\t\t\tDrunk: >= 201 mg/l \n]]></string>
+    <string name="symptoms_page"><![CDATA[\n\nWhen there are more than 4 symptoms, be careful and you should make a check with your\n\tdoctor.\n\n1)Heart “abnormal heart beats” (heart arrhythmias)\n\t\t1. Fluttering in your chest.\n\t\t2. Racing heartbeat.\n\t\t3. Slow heartbeat.\n\t\t4. Chest pain.\n\t\t5. Shortness of breath.\n\t\t6. Dizziness.\n\t\t7. Fainting.\n\t\n\t\n\t2)Diabetic\n\t\t1. Increased thirst.\n\t\t2. Frequent urination.\n\t\t3. Extreme hunger.\n\t\t4. Unexplained weight.\n\t\t5. Fatigue.\n\t\t6. Blurred vision.\n\t\t7. Irritability.\n\t\n\t3)High Temperature\n\t\t1. Heavy sweating.\n\t\t2. Dizziness.\n\t\t3. Faintness.\n\t\t4. Weak, Rapid pulse.\n\t\t5. Headache.\n\t\n\t4)Fever\n\t\t1. Severe headache.\n\t\t2. Mental confusion.\n\t\t3. Sensitivity to bright light.\n\t\t4. Persistent vomiting.\n\n\t5) Spo2 (shortness oxygen in Blood)\n\t\t1. Confusion.\n\t\t2. Cough.\n\t\t3. Changes in color of skin.\n\t\t4. Shortness of breath.\n\t\t5. Sweating.\n\t\t6. Wheezing.\n\n\n]]></string>
+    <string name="help_page"><![CDATA[\n\nFor using this application, you should have our device, then follow these steps:\n\t\tPlug in power cable to device.\n\t\tConnect your phone with Bluetooth (HC-05).\n\t\tSign in with your account.\n\t\tFor Emergencycase, skip it with (Emergency case Button).\n\t\tPress Check Button to Start.]]></string>
+
+</resources>

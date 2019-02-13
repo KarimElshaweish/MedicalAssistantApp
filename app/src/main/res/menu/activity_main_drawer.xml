@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view"
+    >
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/home"
+            android:title="Home"
+            />
+
+        <item
+            android:id="@+id/nav_anxiety"
+            android:icon="@drawable/gsr"
+            android:title="GSR" />
+        <item
+            android:id="@+id/nav_blood_oxygen"
+            android:icon="@drawable/spo2"
+            android:title="SPO2 Level" />
+        <!--item
+            android:id="@+id/nav_blood_pressure"
+            android:icon="@drawable/bloodpressure"
+            android:title="Blood Pressure" /-->
+        <item
+            android:id="@+id/nav_alcohol_id"
+            android:icon="@drawable/alcohol"
+            android:title="Alcohol Level" />
+
+        <item
+            android:id="@+id/nav_body_position"
+            android:icon="@drawable/body_posstion"
+            android:title="Body Position" />
+
+        <item
+            android:id="@+id/nav_heart_beat"
+            android:icon="@drawable/heart_rate"
+            android:title="Heart Rate" />
+
+
+        <item
+                android:id="@+id/nav_temperature"
+                android:icon="@drawable/temp"
+                android:title="Temperature" />
+
+
+        <item
+            android:id="@+id/nav_ECG"
+            android:icon="@drawable/ecg"
+            android:title="ECG" />
+
+        <!--<item-->
+            <!--android:id="@+id/nav_symptoms"-->
+            <!--android:icon="@drawable/symptoms"-->
+            <!--android:title="Symptoms" />-->
+
+    </group>
+
+
+
+
+    <item android:title="Technical Support">
+        <menu>
+            <item
+                android:id="@+id/nav_settings"
+                android:icon="@drawable/settings_icon"
+                android:title="Settings"  />
+
+            <item
+                android:id="@+id/nav_help"
+                android:icon="@drawable/help"
+                android:title="Help" />
+
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/about_us"
+                android:title="About us" />
+
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Logout"  />
+        </menu>
+    </item>
+</menu>

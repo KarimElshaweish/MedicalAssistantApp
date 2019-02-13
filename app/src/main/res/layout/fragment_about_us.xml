@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SymptomsFragment">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_marginLeft="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="vertical">
+                <TextView
+                    android:id="@+id/textView1"
+                    android:gravity="center"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black_app"
+                    android:textStyle="bold"
+                    android:text="Who are we"
+                    android:textSize="35sp" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:textColor="@color/black_app"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="We Are Students at communication department at faculty of engineering at Nahda university and this is our graduation project."
+                    android:textSize="20sp"
+                    android:gravity="center"/>
+
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView72"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:src="@drawable/eslam"
+                        app:civ_border_color="@color/black_app"
+                        app:civ_border_width="2dp"/>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="vertical"
+                        android:layout_gravity="center"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/textView122"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="ESLAM AHMED"
+                            android:textSize="25sp"
+                            android:gravity="center"
+                            android:textColor="@color/black_app"/>
+
+                        <TextView
+                            android:id="@+id/textView13333"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Team Leader"
+                            android:textSize="20sp"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:textColor="@color/black_app"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/black_app"
+                        android:id="@+id/imageView77"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:src="@drawable/dina" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView112"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="DINA EL-SAYED"
+                            android:textSize="25sp"
+                            android:textColor="@color/black_app"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:textColor="@color/black_app"
+                            android:gravity="center"
+                            android:id="@+id/textView113"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Vice Leader"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="5dp"
+                    android:orientation="horizontal"
+                    android:gravity="center">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView75"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:civ_border_width="2dp"
+                        app:civ_border_color="@color/black_app"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:src="@drawable/fareeed" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView1222"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="AHMED FARID"
+                            android:textSize="25sp"
+                            android:textColor="@color/black_app"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:gravity="center"
+                            android:textColor="@color/black_app"
+                            android:id="@+id/textView133"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Hardware Department"
+                            android:textSize="20sp" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_gravity="left"
+                    android:orientation="horizontal">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        app:civ_border_color="@color/black_app"
+                        app:civ_border_width="2dp"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:src="@drawable/bassel" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/textView12"
+                            android:textColor="@color/black_app"
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="25sp"
+                            android:text="MAHMOUD NASSER" />
+                        <TextView
+                            android:id="@+id/textView13"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textSize="20sp"
+                            android:gravity="center"
+                            android:textColor="@color/black_app"
+                            android:text="Software Department" />
+                    </LinearLayout>
+
+                </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <TextView
+                    android:id="@+id/textView2222"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Contact with us \n smartclinic@gmail.com\n\n\n"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</FrameLayout>
