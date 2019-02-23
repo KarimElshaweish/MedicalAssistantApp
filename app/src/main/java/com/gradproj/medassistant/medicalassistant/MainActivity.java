@@ -49,6 +49,9 @@ import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
+import com.jjoe64.graphview.GraphView;
+import com.jjoe64.graphview.series.DataPoint;
+import com.jjoe64.graphview.series.LineGraphSeries;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
@@ -85,11 +88,22 @@ public class MainActivity extends AppCompatActivity
             private Intent bluetoothIntent;
             private User loggedInUser;
 
+            private void creatGraph(){
+                GraphView graph = (GraphView) findViewById(R.id.graph);
+                LineGraphSeries<DataPoint> series = new LineGraphSeries<DataPoint>(new DataPoint[] {
+                        new DataPoint(0, 1),
+                        new DataPoint(1, 5),
+                        new DataPoint(2, 3),
+                        new DataPoint(3, 2),
+                        new DataPoint(4, 6)
+                });
+                graph.addSeries(series);
+            }
             @Override
             protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
                 setContentView(R.layout.activity_main);
-
+                creatGraph();
                 String currentUser = getIntent().getStringExtra("userName");
                 if(currentUser!=null)
                 {

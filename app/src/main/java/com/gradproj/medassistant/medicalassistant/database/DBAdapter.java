@@ -29,12 +29,12 @@ public class        DBAdapter
         this.mCtx = context;
     }
 
-    public DBAdapter open() throws SQLException
-    {
-        mDbHelper = new DBHelper(mCtx);
-        mDb = mDbHelper.getWritableDatabase();
-        return this;
-    }
+        public DBAdapter open() throws SQLException
+        {
+            mDbHelper = new DBHelper(mCtx);
+            mDb = mDbHelper.getWritableDatabase();
+            return this;
+        }
 
     public void close()
     {

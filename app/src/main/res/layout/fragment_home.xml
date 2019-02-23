@@ -1,36 +1,48 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
 
-    tools:context=".MainActivity" >
-
-    <GridView
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/textView1"
+        android:gravity="center"
+        android:layout_margin="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black_app"
+            android:gravity="center"
+            android:text=" Active Sensors" />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/sensor1"
+            android:layout_marginLeft="5dp"/>
+    </LinearLayout>
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/graph"
+        android:layout_margin="10dp"/>
+    <android.support.v7.widget.RecyclerView
         android:id="@+id/gridView1"
+        android:layout_margin="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:stretchMode="columnWidth"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textView1"
-        android:numColumns="2" >
+         >
 
-    </GridView>
-<LinearLayout
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:orientation="horizontal"
-    android:id="@+id/textView1"
-    >
-    <TextView
-        android:drawableRight="@drawable/sensor1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textSize="25dp"
-        android:textStyle="bold"
-        android:textColor="@color/black_app"
-        android:gravity="center"
-        android:text=" Active Sensors" />
+    </android.support.v7.widget.RecyclerView>
+
 </LinearLayout>
-
-</RelativeLayout>

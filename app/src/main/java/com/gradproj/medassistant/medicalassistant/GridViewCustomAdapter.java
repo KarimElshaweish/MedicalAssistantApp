@@ -53,7 +53,7 @@ public class GridViewCustomAdapter extends ArrayAdapter
             row = inflater.inflate(R.layout.grid_row, parent, false);
 
 
-            TextView textViewTitle = (TextView) row.findViewById(R.id.textView1);
+                TextView textViewTitle = (TextView) row.findViewById(R.id.textView1);
             ImageView imageViewIte = (ImageView) row.findViewById(R.id.imageView1);
             Cursor result;
 

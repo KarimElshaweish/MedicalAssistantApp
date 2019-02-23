@@ -6,12 +6,17 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.ListView;
 import android.widget.Toast;
+
+import com.gradproj.medassistant.medicalassistant.Adapter.RVAdapter;
 
 
 /**
@@ -33,8 +38,8 @@ public class HomeFragment extends Fragment {
     private String mParam2;
 
     private OnFragmentInteractionListener mListener;
-    private GridView gridView;
-    private GridViewCustomAdapter grisViewCustomeAdapter;
+    private RecyclerView gridView;
+    private RVAdapter grisViewCustomeAdapter;
     private Handler handler;
     private Runnable myRunnable;
 
@@ -86,9 +91,12 @@ public class HomeFragment extends Fragment {
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
 
-        gridView=(GridView)getView().findViewById(R.id.gridView1);
+
+        gridView=(RecyclerView) getView().findViewById(R.id.gridView1);
+        LinearLayoutManager layoutManager= new LinearLayoutManager(getContext(),LinearLayoutManager.HORIZONTAL, false);
         // Create the Custom Adapter Object
-        grisViewCustomeAdapter = new GridViewCustomAdapter(getView().getContext());
+        gridView.setLayoutManager(layoutManager);
+        grisViewCustomeAdapter = new RVAdapter(getView().getContext());
         // Set the Adapter to GridView
         gridView.setAdapter(grisViewCustomeAdapter);
 
@@ -156,7 +164,7 @@ public class HomeFragment extends Fragment {
 
             @Override
             public void run() {
-                grisViewCustomeAdapter = new GridViewCustomAdapter(getView().getContext());
+                grisViewCustomeAdapter = new RVAdapter(getView().getContext());
                 // Set the Adapter to GridView
                 gridView.setAdapter(grisViewCustomeAdapter);
                 handler.postDelayed( this, 10 * 1000 );
